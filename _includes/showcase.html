@@ -1,0 +1,14 @@
+	</div>
+	<style>
+	.showcase-wrapper {background-image: url("{{ site.url }}/images/showcase.jpg"); }
+	</style>
+    <div class="showcase-wrapper sticky">
+      {% for post in site.posts limit: 1 %}
+        <div class="showcase-text">
+          {{ post.title }}<br>
+        </div>
+        <div class="recent-posts">
+          {{ post.content }}
+    	  {% endfor %}
+	</div>
+     
