@@ -7,7 +7,7 @@ categories: fab 3dprinted honey
 
 I love collecting honey from different parts of the world. Ever since I started beekeeping, I've noticed how different the honey would taste between hives that were only a few miles apart. Whenever a friend is travelling abroad I always ask them to bring me back local honey. 
 
-I thought then that it would be a nice gift for my friends Rachel and Dave wedding to give them a sampler of some of the interesting honeys that I've collected from all around the world:
+I thought then that it would be a nice gift for my friends' wedding to give them a sampler of some of the interesting honeys that I've collected from all around the world:
 
 ![Honey holder]({{ site.url }}/images/honeyholder1.jpg)
 
