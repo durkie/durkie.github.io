@@ -1,6 +1,6 @@
 name: craig
 author: Craig Durkin
-pygments: true
+highlighter: rouge
 baseurl: /
 url: http://www.highcube.org
 description:
