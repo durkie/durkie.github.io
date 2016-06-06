@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "The Railbike"
+date:   2016-06-01 17:56:00
+categories: bike railbike
+---
+
+Singletracks has an [interview with me](//www.singletracks.com/blog/mtb-interviews/riding-on-rails-with-craig-durkin/) about my railbike! So let's cover the high notes:
+
+Since high school I have wanted to ride my bike on railroad tracks. Railroads are just so mysterious: there's thousands of miles of them criss-crossing the US and we only ever see a glimpse of them. And the bicycle is such a perfect tool for exploring the world.
+
+Here in Atlanta there's lots of cool of rail history everywhere and the city is in the process of converting an old rail loop (the Beltline) to an urban trail and light rail system. I thought it'd be super cool to experience the Beltline by rolling along that old rail as trains once did.
+
+Making a railbike has been a backburner project that I came to whenever real work was slow. In that time I came up with a few design criteria:
+
+- **It must work with two bikes side-by-side.** There's two rails and you always need an adventure buddy. Plus most existing railbike designs already use an outrigger on the second rail. If you're going to put something on the other rail then just make it another bike.
+- **It should work with just about any bike.** Bikes come in such a huge variety of geometries and tube shapes that about the only thing you can broadly assume is that the front wheel has 8 mm / 9 mm axle spaced at 100 mm (and even lots of modern mountain bikes don't have this). So the only real way to interface with a bike is by clamping on to its fork.
+- **It should be easy to build and use as many off-the-shelf parts as possible**. A drill press, some metal tubing and a trip to Home Depot should get you far.
+
+# Version 1
+
+![Railbike Version 1]({{ site.url }}/images/version1.jpg)
+
+This version demonstrates the concept and is fun to ride, but falls short of the "I'm comfortable with what I'm doing" mark. There's no diagonal bracing, so pedaling or shifting your weight on the bike can flex the frame, and any variation in rail width (as you might find on abandoned rail) can cause the bike to lean. Riding it feels like you're always leaning in to a turn but still going straight.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TJUtRXv3-N0" frameborder="0" allowfullscreen></iframe>
+
+# Version 2
+
+![Railbike Version 2]({{ site.url }}/images/version2.jpg)
+
+Okay, this one is really sweet. It just works, and it works well. You clamp your fork in and go. Rear wheel tracks fine, no stiffness issues or feeling like you're going to be thrown from the bike. It still has to be carried over turnouts, but it handles weeds really well and is just awesome to ride.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WDZ6YtIjkP8" frameborder="0" allowfullscreen></iframe>
+
+![Railbike Version 2]({{ site.url }}/images/crown.jpg)
+
+Heavy lies the crown.
