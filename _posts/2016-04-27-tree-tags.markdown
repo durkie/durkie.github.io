@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Tree Tags"
+date:   2016-04-27 00:00:00
+categories: concretejungle treetags fruit
+---
+
+![Tree tags](http://localhost:4000/images/treetag.jpg)
+
+Several years ago, me and Aubrey started [Concrete Jungle](//www.concrete-jungle.org). Concrete Jungle picks fruit from trees growing over Atlanta and donates it to local homeless shelters and food banks. We have a database of over 2600 fruit trees and they're really hard to keep track of. They ripen at different times each year and some years just don't produce anything. If we knew what trees were doing in a given year it'd be a lot easier to plan our fruit picking events.
+
+As part of an ongoing collaboration with Carl DiSalvo's lab at Georgia Tech, Concrete Jungle has been trying to develop tree sensors: some way that we can tell what a fruit tree is doing without having to go to the tree and look at it.
+
+We've tried several of Georgia Techy high-tech solutions, but today we're covering a low-tech, low-cost, and surprisingly effective sensor: let's put a tag in a tree and maybe we can convince passersby to act as sensors and send us a quick photo of the tree. Plus, a tag has the cool side effect of teaching people about both fruit trees and Concrete Jungle right as they're standing in front of an urban fruit tree.
+
+![Tree tags tweet](http://localhost:4000/images/treetagtweet.png)
+
+So the goal is to get lots of people to see our tags and send us lots of photos. This means:
+
+* We need to get the person’s attention visually (being able to borrow from hard work already done by nature in developing  [aposematic coloring](https://en.wikipedia.org/wiki/Aposematism))
+* We need to present our instructions quickly and simply enough to get follow-through before they lose interest.
+* We want our tag to be big enough to be noticed, but small enough that it won’t be an eyesore or get removed.
+
+### First draft
+
+![1st draft front](http://localhost:4000/images/1st-draft-front.png)
+![1st draft back](http://localhost:4000/images/1st-draft-back.png)
+
+So, a first stab. We've got:
+
+* Bright, unnatural color combinations
+* Conflicting stripe widths and directions
+* Text calling directly to people
+* Unusual word breaks
+* Tear-off tag redeemable for some sort of prize
+
+It was probably a bit verbose and not great to have horizontal text on something that will be hanging vertically. Onward.
+
+### Second draft
+
+![2nd draft front](http://localhost:4000/images/2nd-draft.png)
+
+Mostly a back-side change to have a bit of fun with an “old library card” motif.
+
+Language was changed to not presume that we will be able to pick from any tree.
+
+As fun as it was to make this, it probably doesn’t further our goal of quick, simple instructions, and our “HELLO HOW ARE YOU” is feeling more like a waste of space.
+
+### Third draft (front/back)
+
+![3rd draft front/back](http://localhost:4000/images/3rd-draft-frontback.png)
+
+This is getting a lot closer:
+
+* Both sides have call to action
+* Annoying colors, large inviting “HELLO” to grab attention
+* Iconography to aid quick understanding
+* More ways to share photos with us to encourage participation
+* Tear-off tag is removed, giving us more space and letting us run a game from the website rather than a one-time physical token from the tag.
+
+Downsides are that the camera icon area feels a bit cramped and stock Apple emoji are not high enough resolution for the tag printer.
+
+#### Final draft
+
+The final version is the one shown at the top of the post.
+
+Proportions adjusted to be a bit cleaner, and the busy camera icon area replaced with “polaroid” icons for the parts of the tree from which we’d like photos. This lets us request the types of pictures we’d like and still visually establish a “take a photo” context.
+
+We've been getting a good response with the tags! One downside of this design is that there's no identification on them so we have to rely entirely on being able to see the context of the tree. Also, as easy as it is to share photos on Instagram, it's a pain in the ass to get photos off of there and put them in to our database.
+
+The tags were printed by Universal Tag at a cost of around $0.40 each. Worth it for even a single in-season photo, let alone the value as a marketing and educational tool.
