@@ -5,7 +5,7 @@ date:   2016-04-27 00:00:00
 categories: concretejungle treetags fruit
 ---
 
-![Tree tags](http://localhost:4000/images/treetag.jpg)
+![Tree tags]({{ site.url }}/images/treetag.jpg)
 
 Several years ago, me and Aubrey started [Concrete Jungle](//www.concrete-jungle.org). Concrete Jungle picks fruit from trees growing over Atlanta and donates it to local homeless shelters and food banks. We have a database of over 2600 fruit trees and they're really hard to keep track of. They ripen at different times each year and some years just don't produce anything. If we knew what trees were doing in a given year it'd be a lot easier to plan our fruit picking events.
 
@@ -13,7 +13,7 @@ As part of an ongoing collaboration with Carl DiSalvo's lab at Georgia Tech, Con
 
 We've tried several of Georgia Techy high-tech solutions, but today we're covering a low-tech, low-cost, and surprisingly effective sensor: let's put a tag in a tree and maybe we can convince passersby to act as sensors and send us a quick photo of the tree. Plus, a tag has the cool side effect of teaching people about both fruit trees and Concrete Jungle right as they're standing in front of an urban fruit tree.
 
-![Tree tags tweet](http://localhost:4000/images/treetagtweet.png)
+![Tree tags tweet]({{ site.url }}/images/treetagtweet.png)
 
 So the goal is to get lots of people to see our tags and send us lots of photos. This means:
 
@@ -23,8 +23,8 @@ So the goal is to get lots of people to see our tags and send us lots of photos.
 
 ### First draft
 
-![1st draft front](http://localhost:4000/images/1st-draft-front.png)
-![1st draft back](http://localhost:4000/images/1st-draft-back.png)
+![1st draft front]({{ site.url }}/images/1st-draft-front.png)
+![1st draft back]({{ site.url }}/images/1st-draft-back.png)
 
 So, a first stab. We've got:
 
@@ -38,7 +38,7 @@ It was probably a bit verbose and not great to have horizontal text on something
 
 ### Second draft
 
-![2nd draft front](http://localhost:4000/images/2nd-draft.png)
+![2nd draft front]({{ site.url }}/images/2nd-draft.png)
 
 Mostly a back-side change to have a bit of fun with an “old library card” motif.
 
@@ -48,7 +48,7 @@ As fun as it was to make this, it probably doesn’t further our goal of quick, 
 
 ### Third draft (front/back)
 
-![3rd draft front/back](http://localhost:4000/images/3rd-draft-frontback.png)
+![3rd draft front/back]({{ site.url }}/images/3rd-draft-frontback.png)
 
 This is getting a lot closer:
 
