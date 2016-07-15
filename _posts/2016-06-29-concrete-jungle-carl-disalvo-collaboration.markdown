@@ -13,7 +13,7 @@ Because it's difficult to know what a tree is doing in a given year, we often si
 
 For the past two years or so, Concrete Jungle has partnered with [Carl DiSalvo's](//carldisalvo.com/) lab at Georgia Tech's [school of Digital Media](//dm.lmc.gatech.edu/) to get a handle on this. Primarily we've been trying to develop ways to remotely sense fruit growing on trees. Before we get in to those ways, let's discuss the partnership some. Why would we want to work with Carl, and why would Carl want to work with us?
 
-Carl's group focuses on **design research**, which is exactly what it sounds like: they study how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet, and to a design researcher a crazy idea starts the conversation. Maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner.
+Carl's group focuses on **design research**, which is exactly what it sounds like: studying how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet, and to a design researcher a crazy idea starts the conversation. Maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner.
 
 Carl's group likes us because they already have a heavy focus on food systems, infrastructure and maps, so a local non-profit that maps fruit trees for foraging and donation is a perfect fit.
 
@@ -21,11 +21,11 @@ Now that we're working together, how do we actually sense fruit growing in a tre
 
 ### Drones
 
-Our first approach was to use drones. The blue-sky idea was to have a drone fly to a fruit tree, take a photo of the tree and return. Also don't hit any trees, animals, cars or power lines. And don't freak anyone out, so maybe fly only at night. We're in fantasyland at this point so the drone should may as well also pick a fruit and bring it back for us to sample.
+Our first approach was to use drones. The apple-pie-in-the-sky idea was to have a drone fly to a fruit tree, take a photo of the tree and return. Also don't hit any trees, animals, cars or power lines. And don't freak anyone out, so maybe fly only at night. We're in fantasyland at this point so the drone may as well also pick some fruit and bring it back for us to sample.
 
-We did some preliminary work and started to develop computer-vision software that could identify fruit growing on fruit trees. But this was the blue-sky idea because it was basically impossible, both because 2014 consumer drone technology wasn't capable, but because it was legally impossible as well. The FAA had a variety of strange and onerous drone rules in place at the time, requiring things like detailed flight manifestos and that each flight have a trained operator and trained drone spotter. Carl received an email from the Georgia Tech Associate Dean of Research informing him that "policy of the FAA is that if a FAA-sanctioned institution is caught breaking FAA rules, then the entire institution can have their regulation revoked." So that shelved the drone project for a while...
+We did some preliminary work and started to develop computer-vision software that could identify fruit growing on fruit trees. But this was the apple-pie-in-the-sky idea because it was basically impossible, both because 2014 consumer drone technology wasn't capable, but because it was legally impossible as well. The FAA had a variety of strange and onerous drone rules in place at the time, requiring things like detailed flight manifestos and that each flight have a trained operator and trained drone spotter. Carl received an email from the Georgia Tech Associate Dean of Research informing him that "policy of the FAA is that if a FAA-sanctioned institution is caught breaking FAA rules, then the entire institution can have their regulation revoked."
 
-What sensing options did that leave us with? A few candidates:
+So that shelved the drone project for a while...what other sensing options did we have? A few candidates:
 
 ### Ethylene gas sensing
 
@@ -60,6 +60,7 @@ As unglamorous and straightforward as this is, a camera would show us exactly wh
 I'll just leave this here:
 
 ![CROPS apple pinger](https://pbs.twimg.com/media/CX7XtelWQAADnhl.png:medium)
+
 (from the [www.crops-robots.eu](//www.crops-robots.eu) 2013 workshop)
 
 So how are we progressing? Stay tuned for Part 2...
