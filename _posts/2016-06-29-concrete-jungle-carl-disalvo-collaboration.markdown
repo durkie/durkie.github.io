@@ -19,7 +19,7 @@ Carl's group likes us because they already have a heavy focus on food systems, i
 
 Now that we're working together, how do we actually sense fruit growing in a tree?
 
-* ## Drones
+### Drones
 
 Our first approach was to use drones. The blue-sky idea was to have a drone fly to a fruit tree, take a photo of the tree and return. Also don't hit any trees, animals, cars or power lines. And don't freak anyone out, so maybe fly only at night. We're in fantasyland at this point so the drone should may as well also pick a fruit and bring it back for us to sample.
 
@@ -27,9 +27,9 @@ We did some preliminary work and started to develop computer-vision software tha
 
 What sensing options did that leave us with? A few candidates:
 
-* ## Sensing ethylene gas production.
+### Ethylene gas sensing
 
-Fruits that are *climacteric* are fruits that ripen in the presence of[ethylene](https://en.wikipedia.org/wiki/Ethylene) gas. These are fruits like apples, bananas, tomatoes, and melons, and this is the reason people suggest putting some fruits in a paper bag with a banana to encourage the fruit to ripen.
+Fruits that are *climacteric* are fruits that ripen in the presence of [ethylene](https://en.wikipedia.org/wiki/Ethylene) gas. These are fruits like apples, bananas, tomatoes, and melons, and this is the reason people suggest putting some fruits in a paper bag with a banana to encourage the fruit to ripen.
 
 Ethylene sensing would be ideal since we're directly measuring a gas produced in response to fruit ripening. Ethylene concentration passes some threshold, sensor tweets at us and we go pick it. Easy as.
 
@@ -37,29 +37,29 @@ The problem is that the only ethylene sensors on the market are large units for 
 
 There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has some promising new carbon nanotube-based sensor technology that promises ethylene sensors for pennies apiece. Unfortunately, like most companies using carbon nanotubes, they are shipping neither product nor prototype.
 
-* ## Electronic nose
+### Electronic nose
 
 There's lots of cheap gas sensors out there based on tin oxide semiconductors. Although they are often sold as an alcohol sensor, methane sensor or hydrogen sensor, these sensors are responsive to a variety of gases beyond what their label indicates.
 
-* ## Mechanical sensors
+### Mechanical sensors
 
 One way that you can tell a pear tree is ready to be picked is simply by how it looks. Its long, thin branches, normally upright, are bent over, laden with heavy fruit. So perhaps we can sense branch bend angle and use that as a proxy for fruit ripeness.
 
 This approach is the most tenuous for producing good data (since branches will constantly be bending and swaying with weather and disturbances), but that can probably accounted for and having a cheap starter sensor will let us develop the rest of the sensor platform so that when an appropriate sensor is available we can drop it in and go.
 
-* ## Human sensors
+### Human sensors
 
-If we can get random passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person. Plus we get some good marketing and educational value out of it. I covered these in more detail [here](/tree-tags)
+If we can get random passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person. Plus we get some good marketing and educational value out of it. I covered these in more detail [here](/tree-tags).
 
-* ## Embedded tree camera
+### Embedded tree camera
 
 As unglamorous and straightforward as this is, a camera would show us exactly what we want, and we simply have to solve for the infrastructure around it, mostly being communication and power. On a large enough scale, we might have to develop image processing capabilities.
 
-* ## Any other wacky idea
+### Any other wacky idea
 
 I'll just leave this here:
 
 ![CROPS apple pinger](https://pbs.twimg.com/media/CX7XtelWQAADnhl.png:medium)
-(from the www.crops-robots.eu 2013 workshop)
+(from the [www.crops-robots.eu](//www.crops-robots.eu) 2013 workshop)
 
 So how are we progressing? Stay tuned for Part 2...
