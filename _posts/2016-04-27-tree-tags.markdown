@@ -11,7 +11,7 @@ Several years ago, me and Aubrey started [Concrete Jungle](//www.concrete-jungle
 
 As part of an ongoing collaboration with Carl DiSalvo's lab at Georgia Tech, Concrete Jungle has been trying to develop tree sensors: some way that we can tell what a fruit tree is doing without having to go to the tree and look at it.
 
-We've tried several of Georgia Techy high-tech solutions, but today we're covering a low-tech, low-cost, and surprisingly effective sensor: let's put a tag in a tree and maybe we can convince passersby to act as sensors and send us a quick photo of the tree. Plus, a tag has the cool side effect of teaching people about both fruit trees and Concrete Jungle right as they're standing in front of an urban fruit tree.
+We've tried several high-tech solutions, but today we're covering a low-tech, low-cost, and surprisingly effective sensor: let's put a tag in a tree and maybe we can convince passersby to act as sensors and send us a quick photo of the tree. Plus, a tag has the cool side effect of teaching people about both fruit trees and Concrete Jungle right as they're standing in front of an urban fruit tree.
 
 ![Tree tags tweet]({{ site.url }}/images/treetagtweet.png)
 

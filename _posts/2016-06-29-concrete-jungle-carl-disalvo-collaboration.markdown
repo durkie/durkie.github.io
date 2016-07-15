@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Concrete Jungle's Fruit Tree Sensors"
+date:   2016-06-28 17:56:00
+categories: sensors concretejungle georgiatech
+---
+
+Concrete Jungle has mapped nearly 3000 fruit trees in the Atlanta area alone and planning around their varying schedules is the largest logistical challenge that we face in growing the organization. Some trees will produce early, some late, some not at all, some produce on-schedule but drop their fruit earlier than expected, some produce a bumper crop and should be prioritized, etc.
+
+This is a problem that varies with the type of fruit. Serviceberries in Atlanta were planted almost entirely by Trees Atlanta and the few varieties they've planted are quite predictable: we are pretty much guaranteed to be picking serviceberries on May 23rd no matter what. Apples and pears, which are more diverse in variety and make up the bulk of our picking weight, are much less consistent.
+
+Because it's difficult to know what a tree is doing in a given year, we often simply have to physically inspect a tree. Once we've found a tree that has fruit ready to be picked, we inspect nearby fruit trees and try to find enough in an area around which we can create a fruit-picking event. This is hugely time-consuming: wandering around Atlanta, checking on our vast, sparse urban orchard week-after-week.
+
+For the past two years or so, Concrete Jungle has partnered with [Carl DiSalvo's](//carldisalvo.com/) lab at Georgia Tech's [school of Digital Media](//dm.lmc.gatech.edu/) to get a handle on this. Primarily we've been trying to develop ways to remotely sense fruit growing on trees. Before we get in to those ways, let's discuss the partnership some. Why would we want to work with Carl, and why would Carl want to work with us?
+
+Carl's group focuses on **design research**, which is exactly what it sounds like: they study how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet, and to a design researcher a crazy idea starts the conversation. Maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner.
+
+Carl's group likes us because they already have a heavy focus on food systems, infrastructure and maps, so a local non-profit that maps fruit trees for foraging and donation is a perfect fit.
+
+So how do we sense fruit growing in a tree?
+
+* Drones
+
+Our first approach was to use drones. The blue-sky idea was to have a drone fly to a fruit tree, take a photo of the tree and return. Also don't hit any trees, animals, cars or power lines. And don't freak anyone out, so maybe fly only at night? Kind of a stretch.
+
+We did some preliminary work and started to develop computer-vision software that could identify fruit growing on fruit trees. But this was the blue-sky idea because it was basically impossible, both because 2014 consumer drone technology wasn't capable, but because it was legally impossible as well. The FAA had a variety of strange and onerous drone rules in place at the time, requiring things like detailed flight manifestos and that each flight have a trained operator and trained drone spotter. Carl received an email from the Georgia Tech Associate Dean of Research informing him that "policy of the FAA is that if a FAA-sanctioned institution is caught breaking FAA rules, then the entire institution can have their regulation revoked." So that shelved the drone project for a while...
+
+So what other options do we have for sensing fruit? A few candidates:
+
+* Sensing ethylene gas production.
+
+Fruits that are *climacteric* are fruits that ripen in the presence of[ethylene](https://en.wikipedia.org/wiki/Ethylene) gas. These are fruits like apples, bananas, tomatoes, and melons, and this is the reason people suggest putting some fruits in a paper bag with a banana to encourage the fruit to ripen.
+
+Ethylene sensing would be ideal since we're directly measuring a gas produced in response to fruit ripening. Ethylene concentration passes some threshold, sensor tweets at us and we go pick it. Easy as.
+
+The problem is that the only ethylene sensors on the market are large units for commercial fruit storage warehouses that are parts-per-billion accurate and likely thousands of dollars per sensor setup (you know you're in trouble when you see "request a quote" instead of a price.)
+
+There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has some promising new carbon nanotube-based sensor technology that promises ethylene sensors for pennies apiece. Unfortunately, like most companies using carbon nanotubes, they are shipping neither product nor prototype.
+
+* Electronic nose
+
+There's lots of cheap gas sensors out there based on tin oxide semiconductors. Although they are often sold as an alcohol sensor, methane sensor or hydrogen sensor, these sensors are responsive to a variety of gases beyond what their label indicates.
+
+* Mechanical sensors
+
+One way that you can tell a pear tree is ready to be picked is simply by how it looks. Its long, thin branches, normally upright, are bent over, laden with heavy fruit. So perhaps we can sense branch bend angle and use that as a proxy for fruit ripeness.
+
+This approach is the most tenuous for producing good data (since branches will constantly be bending and swaying with weather and disturbances), but that can probably accounted for and having a cheap starter sensor will let us develop the rest of the sensor platform so that when an appropriate sensor is available we can drop it in and go.
+
+* Human sensors
+
+If we can get random passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person. Plus we get some good marketing and educational value out of it. I covered these in more detail [here](/tree-tags)
+
+* Embedded tree camera
+
+As unglamorous and straightforward as this is, a camera would show us exactly what we want, and we simply have to solve for the infrastructure around it, mostly being communication and power. On a large enough scale, we might have to develop image processing capabilities.
+
+So how are we progressing? Stay tuned for Part 2...
