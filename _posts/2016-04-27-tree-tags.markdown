@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Tree Tags"
+title:  "Tree Tags: encouraging citizen science and civic engagement"
 date:   2016-04-27 01:23:45
 categories: concretejungle treetags fruit
 ---
 
 ![Tree tags]({{ site.url }}/images/treetag.jpg)
 
-Several years ago, me and Aubrey started [Concrete Jungle](//www.concrete-jungle.org). Concrete Jungle picks fruit from trees growing over Atlanta and donates it to local homeless shelters and food banks. We have a database of over 2600 fruit trees and they're really hard to keep track of. They ripen at different times each year and some years just don't produce anything. If we knew what trees were doing in a given year it'd be a lot easier to plan our fruit picking events.
+Several years ago, me and Aubrey started [Concrete Jungle](//www.concrete-jungle.org). Concrete Jungle picks fruit from trees growing over Atlanta and donates it to local homeless shelters and food banks. We have a database of thousands of fruit trees and they're really hard to keep track of. They ripen at different times each year and some years just don't produce anything. If we knew what trees were doing in a given year it'd be a lot easier to plan our fruit picking events.
 
 As part of an ongoing collaboration with Carl DiSalvo's lab at Georgia Tech, Concrete Jungle has been trying to develop tree sensors: some way that we can tell what a fruit tree is doing without having to go to the tree and look at it.
 
@@ -66,6 +66,12 @@ The final version is the one shown at the top of the post.
 
 Proportions adjusted to be a bit cleaner, and the busy camera icon area replaced with “polaroid” icons for the parts of the tree from which we’d like photos. This lets us request the types of pictures we’d like and still visually establish a “take a photo” context.
 
+The tags were printed by Universal Tag at a cost of around $0.40 each. Worth it for even a single in-season photo, let alone the value as a marketing and educational tool.
+
+#### Results
+
 We've been getting a good response with the tags! One downside of this design is that there's no identification on them so we have to rely entirely on being able to see the context of the tree. Also, as easy as it is to share photos on Instagram, it's a pain in the ass to get photos off of there and put them in to our database.
 
-The tags were printed by Universal Tag at a cost of around $0.40 each. Worth it for even a single in-season photo, let alone the value as a marketing and educational tool.
+The tags can also be a nice reminder for homeowners. Many of the trees we pick are from the yards of private homeowners, but we still spend a large amount of time personally checking on the tree even though someone lives within 50 feet of it.
+
+This is definitely an area in which we can improve, but we're also dealing with an unwanted resource. 99% of the residential fruit trees we pick in Atlanta are owned by someone that could not care less about it, so it can be difficult to encourage tree owners to do something proactive.

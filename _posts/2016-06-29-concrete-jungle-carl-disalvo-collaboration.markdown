@@ -5,15 +5,17 @@ date:   2016-06-28 17:56:00
 categories: sensors concretejungle georgiatech
 ---
 
-Concrete Jungle has mapped nearly 3000 fruit trees in the Atlanta area alone and planning around their varying schedules is the largest logistical challenge that we face in growing the organization. Some trees will produce early, some late, some not at all, some produce on-schedule but drop their fruit earlier than expected, some produce a bumper crop and should be prioritized, etc.
+One of the biggest challenges we face in running and growing Concrete Jungle is planning around the varying schedules of the thousands of fruit trees in the Atlanta area. Some trees will produce early, some produce late, some not at all. Some produce on-schedule but drop their fruit earlier than expected, some produce a bumper crop and should be prioritized, etc.
 
 This is a problem that varies with the type of fruit. Serviceberries in Atlanta were planted almost entirely by Trees Atlanta and the few varieties they've planted are quite predictable: we are pretty much guaranteed to be picking serviceberries on May 23rd no matter what. Apples and pears, which are more diverse in variety and make up the bulk of our picking weight, are much less consistent.
 
-Because it's difficult to know what a tree is doing in a given year, we often simply have to physically inspect a tree. Once we've found a tree that has fruit ready to be picked, we inspect nearby fruit trees and try to find enough in an area around which we can create a fruit-picking event. This is hugely time-consuming: wandering around Atlanta, checking on our vast, sparse urban orchard week-after-week.
+Because it's difficult to know what a tree is doing in a given year, we often simply have to physically inspect a tree. This means we spend a tremendous amount of time wandering around Atlanta, checking on our vast, sparse, urban orchard week-after-week.
+
+## Design for foraging
 
 For the past two years or so, Concrete Jungle has partnered with [Carl DiSalvo's](//carldisalvo.com/) lab at Georgia Tech's [school of Digital Media](//dm.lmc.gatech.edu/) to get a handle on this. Primarily we've been trying to develop ways to remotely sense fruit growing on trees. Before we get in to those ways, let's discuss the partnership some. Why would we want to work with Carl, and why would Carl want to work with us?
 
-Carl's group focuses on **design research**, which is exactly what it sounds like: studying how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet, and to a design researcher a crazy idea starts the conversation. Maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner.
+Carl's group focuses on **design research**, which is exactly what it sounds like: studying how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we have and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet and to a design researcher a crazy idea starts the conversation. From there you examine the process of how to design for that goal: maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner. Or maybe the crazy idea is really simple if you approach the problem from this direction...
 
 Carl's group likes us because they already have a heavy focus on food systems, infrastructure and maps, so a local non-profit that maps fruit trees for foraging and donation is a perfect fit.
 
