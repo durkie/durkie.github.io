@@ -39,7 +39,7 @@ There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has s
 
 ### Electronic nose
 
-![tree tag](//images/ubicomp2013.png)
+![electronic nose](/images/ubicomp2013.png)
 
 (from "Detecting cooking state with gas sensors during dry cooking", Ubicomp 2013)
 
@@ -53,7 +53,7 @@ This approach is the most tenuous for producing good data (since branches will c
 
 ### Human sensors
 
-![tree tag](//images/treetag.jpg)
+![tree tag](/images/treetag.jpg)
 
 If we can get random passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person. Plus we get some good marketing and educational value out of it. I covered these in more detail [here](/tree-tags).
 
