@@ -39,7 +39,11 @@ There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has s
 
 ### Electronic nose
 
-There's lots of cheap gas sensors out there based on tin oxide semiconductors. Although they are often sold as an alcohol sensor, methane sensor or hydrogen sensor, these sensors are responsive to a variety of gases beyond what their label indicates.
+![tree tag](//images/ubicomp2013.png)
+
+(from "Detecting cooking state with gas sensors during dry cooking", Ubicomp 2013)
+
+There's lots of cheap gas sensors out there based on tin oxide semiconductors. Although they are often sold as an alcohol sensor, methane sensor or hydrogen sensor, these sensors can be responsive to a variety of gases beyond what their label indicates, and there are a variety of powerful data analysis methods out there to tease out additional information.
 
 ### Mechanical sensors
 
@@ -48,6 +52,8 @@ One way that you can tell a pear tree is ready to be picked is simply by how it 
 This approach is the most tenuous for producing good data (since branches will constantly be bending and swaying with weather and disturbances), but that can probably accounted for and having a cheap starter sensor will let us develop the rest of the sensor platform so that when an appropriate sensor is available we can drop it in and go.
 
 ### Human sensors
+
+![tree tag](//images/treetag.jpg)
 
 If we can get random passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person. Plus we get some good marketing and educational value out of it. I covered these in more detail [here](/tree-tags).
 
