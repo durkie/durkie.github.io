@@ -41,7 +41,7 @@ The problem is that the only ethylene sensors on the market are large units for 
 
 There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has some promising new carbon nanotube-based sensor technology that promises ethylene sensors for pennies apiece. The basic principle of the sensor is that you attach an ethylene-sensitive molecule on to a carbon nanotube, hook up two electrodes to the nanotube(s), and when ethylene is present you can measure some electrical change. Unfortunately, like most companies using carbon nanotubes, they are shipping neither product nor prototype.
 
-(side note about those C2Sense sensors: they used a really cool process to make early versions in the lab. First the carbon nanotubes are **functionalized**, whereby some the ethylene-sensitive molecule is attached to the nanotube. That's pretty normal. Making the electrode connection is a bit more difficult, and they developed a neat solution: they took their functionalized nanotubes, compressed them in to a small rod, and put that rod in a standard mechanical pencil. Making the connection between electrodes is then as simple as drawing a line with the pencil.)
+(side note about those C2Sense sensors: they used a really cool process to make early versions in the lab. First the carbon nanotubes are *functionalized*, whereby some the ethylene-sensitive molecule is attached to the nanotube. That's pretty normal. Making the electrode connection is a bit more difficult, and they developed a neat solution: they took their functionalized nanotubes, compressed them in to a small rod, and put that rod in a standard mechanical pencil. Making the connection between electrodes is then as simple as drawing a line with the pencil.)
 
 ### Electronic nose
 
