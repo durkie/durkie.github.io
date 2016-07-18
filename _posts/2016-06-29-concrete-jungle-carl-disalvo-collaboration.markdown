@@ -15,7 +15,7 @@ Because it's difficult to know what a tree is doing in a given year, we often si
 
 For the past two years or so, Concrete Jungle has partnered with [Carl DiSalvo's](//carldisalvo.com/) lab at Georgia Tech's [school of Digital Media](//dm.lmc.gatech.edu/) to get a handle on this. Primarily we've been trying to develop ways to remotely sense fruit growing on trees. Before we get in to those ways, let's discuss the partnership some. Why would we want to work with Carl, and why would Carl want to work with us?
 
-Carl's group focuses on **design research**, which is exactly what it sounds like: studying how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we have and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet and to a design researcher a crazy idea starts the conversation. From there you examine the process of how to design for that goal: maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner. Or maybe the crazy idea is really simple if you approach the problem from this direction...
+Carl's group focuses on **design research**, which is exactly what it sounds like: studying how things might be designed. It's several steps up the chain from actual manufacturing of any physical article. At the design research phase, we have an end goal in mind that we wish to realize but there are several different avenues that could get us to a solution. This is great for us: we know what problem we have and aren't too picky about how we get there. For a long time we thought of Carl as our crazy ideas outlet and, to a design researcher, a crazy idea starts the conversation. Maybe there is a feasible alternative to the crazy idea. Or maybe the technology to make the crazy idea a reality is just around the corner. Or maybe the crazy idea is really simple if you approach the problem from this direction...
 
 Carl's group likes us because they already have a heavy focus on food systems, infrastructure and maps, so a local non-profit that maps fruit trees for foraging and donation is a perfect fit.
 
@@ -27,9 +27,11 @@ Our first approach was to use drones. The apple-pie-in-the-sky idea was to have 
 
 We did some preliminary work and started to develop computer-vision software that could identify fruit growing on fruit trees. But this was the apple-pie-in-the-sky idea because it was basically impossible, both because 2014 consumer drone technology wasn't capable, but because it was legally impossible as well. The FAA had a variety of strange and onerous drone rules in place at the time, requiring things like detailed flight manifestos and that each flight have a trained operator and trained drone spotter. Carl received an email from the Georgia Tech Associate Dean of Research informing him that "policy of the FAA is that if a FAA-sanctioned institution is caught breaking FAA rules, then the entire institution can have their regulation revoked."
 
-So that shelved the drone project for a while...what other sensing options did we have? A few candidates:
+So that shelved the drone project for a while...what other sensing options did we have?
 
 ### Ethylene gas sensing
+
+![electronic nose](/images/sensorsense.png)
 
 Fruits that are *climacteric* are fruits that ripen in the presence of [ethylene](https://en.wikipedia.org/wiki/Ethylene) gas. These are fruits like apples, bananas, tomatoes, and melons, and this is the reason people suggest putting some fruits in a paper bag with a banana to encourage the fruit to ripen.
 
@@ -37,7 +39,9 @@ Ethylene sensing would be ideal since we're directly measuring a gas produced in
 
 The problem is that the only ethylene sensors on the market are large units for commercial fruit storage warehouses that are parts-per-billion accurate and likely thousands of dollars per sensor setup (you know you're in trouble when you see "request a quote" instead of a price.)
 
-There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has some promising new carbon nanotube-based sensor technology that promises ethylene sensors for pennies apiece. Unfortunately, like most companies using carbon nanotubes, they are shipping neither product nor prototype.
+There is a company spun out of MIT named [C2Sense](//www.c2sense.com) that has some promising new carbon nanotube-based sensor technology that promises ethylene sensors for pennies apiece. The basic principle of the sensor is that you attach an ethylene-sensitive molecule on to a carbon nanotube, hook up two electrodes to the nanotube(s), and when ethylene is present you can measure an electrical (probably resistance) change. Unfortunately, like most companies using carbon nanotubes, they are shipping neither product nor prototype.
+
+(side note about those C2Sense sensors: they used a really cool process to make early versions in the lab. First the carbon nanotubes are **functionalized**, whereby some the ethylene-sensitive molecule is attached to the nanotube. That's pretty normal. Making the electrode connection is a bit more difficult, and they developed a neat solution: they took their functionalized nanotubes, compressed them in to a small rod, and put that rod in a standard mechanical pencil. Making the connection between electrodes is then as simple as drawing a line with the pencil.)
 
 ### Electronic nose
 
