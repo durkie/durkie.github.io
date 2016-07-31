@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tree Tags: encouraging citizen science and civic engagement"
+title:  "Tree Tags: a low-cost, human-based sensor network to monitor urban fruit trees"
 date:   2016-04-27 01:23:45
 categories: concretejungle treetags fruit
 ---
