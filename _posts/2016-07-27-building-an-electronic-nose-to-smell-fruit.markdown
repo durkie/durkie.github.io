@@ -76,24 +76,28 @@ Once again we have a trend and once again there's also a lot of garbage. There i
 
 (LCD screen, 2 Arduino UNOs, 2 Seeed Studio Grove shields, one Sparkfun SD card shield)
 
-Since I obviously had some hard-to-diagnose eletrical error in my wiring, I decided to try the Grove system out from Seeed Studio. The nice thing about the Grove stuff is that it all uses 4 pin connectors and is designed for plug-n-play environmental monitoring.
+Since I obviously had some hard-to-diagnose electrical error in my wiring, I decided to try the Grove system out from Seeed Studio. The nice thing about the Grove stuff is that it all uses 4 pin connectors and is designed for plug-n-play environmental monitoring.
 
 ![arduino with double PTC fuse](/images/doublefuse.jpg)
 
 (Arduino UNO with 2 PTC fuses on it (5055 label in photo))
 
-The power supply is still a bit of an issue on the Arduinos, but I came up with a simple solution: I soldered an extra fuse on top of the existing 500mA fuse, which should give 1000mA of total fusing capability, and then it lets me use a 2A phone charger as my 5V source, giving me a nice cheap power supply with minimal power dissipation concerns. I split the sensors among two Arduinos to limit power draw, and had them communicate with each other over I2C.
+The power supply is still a bit of an issue on the Arduinos, but I came up with a simple solution: I soldered an extra fuse on top of the existing 500mA fuse, which should give 1000mA of total fusing capability, and then it lets me use a 2 amp USB phone charger as my 5V source. I can plug directly in to the USB port without having to cut/strip a cable and have minimal power dissipation concerns. And high-quality USB chargers are cheap as chips these days. I split the sensors among two Arduinos to limit power draw and had them communicate with each other over I2C (Server sketch [here](https://github.com/PublicDesignWorkshop/Gas-Sensor-Version-1.5-Server-) and client sketch [here](https://github.com/PublicDesignWorkshop/Gas-Sensor-Version-1.5-Client-))
 
 ![LCD screen output](/images/1.5lcdscreen.jpg)
 
-(hard to cram readings from all 9 sensors on to the screen)
+(cramming all 9 sensor readings on to the screen)
 
 Unfortunately, none of this mattered because the sensors do not seem to be well designed. They are nicer than my original setup in that they have a potentiometer on them to let you calibrate their output, but they also seem like they are just made wrong.
 
-When setting up this system I noticed that a certain sensor would short out the Arduino every time I plugged it in. This would happen even if I removed the actual gas sensor from the socket, so it was a problem in the breakout board circuitry itself. There's not much to that [circuitry](http://www.seeedstudio.com/wiki/images/f/f2/Gas_Sensor_Schematic.pdf) except for a few capacitors, an inductor and an IC. That IC (only labeled in the EAGLE part info) is an [ETA1036](www.etasolution.com/upload/product/ETA1036.pdf) step-up voltage converter. The datasheet is super short, but it makes one thing clear: max input voltage of 4.5V. This is completely undocumented on the Seeed Studio wiki, and it seems like connecting 5V to the sensor just blew up the converter.
+![LCD screen output](/images/seeed-sensor-1.4.jpg)
+
+(why...)
+
+When setting up this system I noticed that a certain sensor would short out the Arduino every time I plugged it in. This would happen even if I removed the actual gas sensor from the socket, so it was a problem in the breakout board circuitry itself. There's not much to that [circuitry](http://www.seeedstudio.com/wiki/images/f/f2/Gas_Sensor_Schematic.pdf) except for a few capacitors, an inductor and an IC. That IC (only labeled in the EAGLE part info) is an [ETA1036](www.etasolution.com/upload/product/ETA1036.pdf) step-up voltage converter. The datasheet is super short but it makes one thing clear: **max input voltage of 4.5V**. This means **don't recommend people connect 5V to it on your wiki**.
 
 During the course of figuring this out I managed to cause another sensor to short out the Arduino, and it seemed like a matter of time before all the sensors would fail.
 
 ### Version 2
 
-This isn't here yet, but is guaranteed to be super awesome and perfect for what we need. I'm excited to tell yall about it when it's ready!
+This isn't here yet but is guaranteed to be super awesome and perfect for what we need. I'm excited to tell yall about it when it's ready!
