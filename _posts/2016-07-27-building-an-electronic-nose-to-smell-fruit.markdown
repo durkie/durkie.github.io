@@ -11,9 +11,12 @@ How do we do this? Ideally we'd sense **ethylene** since it's produced as a by-p
 
 ![ethylene](/images/ethylene.png)
 
+(Ethylene molecule: 2 carbon atoms linked with a double bond. Each carbon has 2 hydrogen atoms bonded to it.)
+
 Ethylene sensors are typically used in commercial fruit storage warehouses, so they're large and expensive and parts-per-billion accurate. That won't do for a small-budget project needing small sensors to give a basic "ripe/not ripe" determination.
 
 ![taguchi gas sensor](/images/gas-sensor.jpg)
+
 (Taguchi gas sensor. Inside is a small heated semiconductor. Image © Sparkfun CC BY-NC-SA 3.0)
 
 One option we have is semiconductor gas detectors. These are sometimes called tin dioxide sensors or Taguchi gas sensors. The basic principle of these sensors is that as oxygen attaches to the tin dioxide sensor surface it causes the electrical resistance of the sensor to increase. In air, the amount of oxygen doesn't really change so the sensor should give a steady value. One could consider the sensor at this stage to be **oxidized**. Going back to high school chemistry, the opposite of oxidation is **reduction**, so these sensors excel at sensing **reducing gases**: those gases that remove oxygen from the sensor surface and cause its resistance to decrease. One way to remove oxygen is simply to react with it and at that point we've arrived at **combustion**. When you're burning or combusting something, it's reacting with the oxygen in the air and releasing energy to keep you warm, move a piston in your car engine or destroy incriminating evidence.
@@ -57,7 +60,7 @@ The sensors were all placed in the bag and left running for a day so they could 
 
 The first nice thing to notice about the data is that it points up and to the right. That's super cool because it means we're detecting something in relation to ripeness. But beyond that, we've got our usual problems.
 
-Also, the banana ripened really weirdly in the bag and gave off a lot of moisture. It tasted fine in the end, but we probably need to use a water vapor-permeable material like Tyvek in the real world. The last photo in this gift shows the bag-ripened version on the bottom compared to a banana from the same bunch ripened in open air.
+Also, the banana ripened really weirdly in the bag and gave off a lot of moisture. It tasted fine in the end, but we probably need to use a water vapor-permeable material like Tyvek in the real world. The last photo in this GIF shows the bag-ripened version on the bottom compared to a banana from the same bunch, but ripened in open air.
 
 ![green banana timelapse](/images/green-banana-progress.gif)
 
@@ -69,11 +72,21 @@ Once again we have a trend and once again there's also a lot of garbage. There i
 
 ### Version 1.5
 
+![version 1.5 gas sensor system](/images/version1.5.jpg)
+
+(LCD screen, 2 Arduino UNOs, 2 Seeed Studio Grove shields, one Sparkfun SD card shield)
+
 Since I obviously had some hard-to-diagnose eletrical error in my wiring, I decided to try the Grove system out from Seeed Studio. The nice thing about the Grove stuff is that it all uses 4 pin connectors and is designed for plug-n-play environmental monitoring.
 
-The power supply is still a bit of an issue on the Arduinos, but I came up with a simple solution: I soldered an extra fuse on top of the existing 500mA fuse, which should give 1000mA of total fusing capability, and then it lets me use a 2A phone charger as my 5V source, giving me a nice cheap power supply with minimal power dissipation concerns.
+![arduino with double PTC fuse](/images/doublefuse.jpg)
 
-I split the sensors among two Arduinos to limit power draw, and had them communicate with each other over I2C.
+(Arduino UNO with 2 PTC fuses on it (5055 label in photo))
+
+The power supply is still a bit of an issue on the Arduinos, but I came up with a simple solution: I soldered an extra fuse on top of the existing 500mA fuse, which should give 1000mA of total fusing capability, and then it lets me use a 2A phone charger as my 5V source, giving me a nice cheap power supply with minimal power dissipation concerns. I split the sensors among two Arduinos to limit power draw, and had them communicate with each other over I2C.
+
+![LCD screen output](/images/1.5lcdscreen.jpg)
+
+(hard to cram readings from all 9 sensors on to the screen)
 
 Unfortunately, none of this mattered because the sensors do not seem to be well designed. They are nicer than my original setup in that they have a potentiometer on them to let you calibrate their output, but they also seem like they are just made wrong.
 
