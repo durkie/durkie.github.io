@@ -25,6 +25,9 @@ Now that we're working together, how do we actually sense fruit growing in a tre
 
 Our first approach was to use drones. The apple-pie-in-the-sky idea was to have a drone fly to a fruit tree, take a photo of the tree and return. Also don't hit any trees, animals, cars or power lines. And don't freak anyone out, so maybe fly only at night. We're in fantasyland at this point so the drone may as well also pick some fruit and bring it back for us to sample.
 
+![drone edge detection](/images/drone-cv.jpg)
+Our drone camera detecting the outline of an apple in the foreground
+
 We did some preliminary work and started to develop computer-vision software that could identify fruit growing on fruit trees. But this was the apple-pie-in-the-sky idea because it was basically impossible, both because 2014 consumer drone technology wasn't capable, but because it was legally impossible as well. The FAA had a variety of strange and onerous drone rules in place at the time, requiring flight manifestos, trained drone operators and trained drone spotters for each flight. Carl received an email from the Georgia Tech Associate Dean of Research informing him that "policy of the FAA is that if a FAA-sanctioned institution is caught breaking FAA rules, then the entire institution can have their regulation revoked."
 
 So that shelved the drone project for a while...what other sensing options did we have?
