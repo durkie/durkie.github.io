@@ -66,9 +66,7 @@ This approach is the most tenuous for producing good data (since branches will c
 
 If we can get passersby to send us photos of a fruit tree, then perhaps that will work out just as well as us visiting the tree in person.
 
-These tie in nicely with Concrete Jungle's Tree Parent program, where we encourage residents to adopt a local fruit tree and check up on it occasionally, letting us know when it's nearing readiness.
-
-Plus we get some good marketing and educational value out of them.
+These tie in nicely with Concrete Jungle's Tree Parent program, where we encourage residents to adopt a local fruit tree and check up on it occasionally, letting us know when it's nearing readiness. Plus we get some good marketing and educational value out of them.
 
 I covered these in more detail [here](/tree-tags).
 
