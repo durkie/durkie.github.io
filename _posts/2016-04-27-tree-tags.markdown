@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Tree Tags: a low-cost, human-based sensor network to monitor urban fruit trees"
+title:  Tree Tags
+description: A low-cost, human-based sensor network to monitor urban fruit trees
 date:   2016-04-27 01:23:45
-categories: concretejungle treetags fruit
+image: assets/images/treetag.jpg
 ---
 
 ![Tree tags]({{ site.url }}/images/treetag.jpg)

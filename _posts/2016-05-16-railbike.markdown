@@ -2,7 +2,7 @@
 layout: post
 title:  "The Railbike"
 date:   2016-05-16 17:56:00
-categories: bike railbike
+image: assets/images/version2.jpg
 ---
 
 Singletracks has an [interview with me](//www.singletracks.com/blog/mtb-interviews/riding-on-rails-with-craig-durkin/) about my railbike! So let's cover the high notes:

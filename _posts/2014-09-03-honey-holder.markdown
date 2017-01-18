@@ -2,7 +2,7 @@
 layout: post
 title:  "Honey holder"
 date:   2014-09-03 17:56:00
-categories: fab 3dprinted honey
+image: assets/images/honeyholder1.jpg
 ---
 
 I love collecting honey from different parts of the world. Ever since I started beekeeping, I've noticed how different the honey would taste between hives that were only a few miles apart. Whenever a friend is travelling abroad I always ask them to bring me back local honey.
@@ -19,4 +19,4 @@ The Ethiopian is the most exotic — it was obtained at a market outside a refug
 
 If you decide to print one of your own don't bother with support material. It will will require only minor cleanup afterwards in comparison with removing support material from a lot of the overhangs. You may also want to remove the bottom border from the model so that it can simply sit upright.
 
-[Honey holder]({{ site.url }}/honeyholder.skp.gz) (SKP)
+[Honey holder]({{ site.url }}/assets/files/honeyholder.skp.gz) (SKP)

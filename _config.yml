@@ -1,11 +1,29 @@
-name: craig
+# Site settings
+title: Craig Durkin
+subtitle:
+email: youremailaddress@gmail.com
+description: "Hi! Here's a few things I've made..."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
 author: Craig Durkin
-highlighter: rouge
-baseurl: /
-url: http://www.highcube.org
-description:
-github: http://www.github.com/durkie
-twitter: http://www.twitter.com/high_cube
-email: craig AT highcube.org
-location: 33°45'42.73"N   84°19'52.57"W
+street_address: 1234 Somewhere Road
+city: Atlanta
+state: GA
+zip_code:
+country: United States of America
+phone:
 permalink: /:title
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 12
+
+# Social settings
+github_url: https://github.com/durkie
+twitter_url: https://twitter.com/durkie
+
+# Build settings
+markdown: kramdown
+
+sass:
+  style: compressed

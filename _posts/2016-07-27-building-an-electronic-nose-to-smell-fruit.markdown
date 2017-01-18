@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Concrete Jungle's Fruit Tree Sensors Part 2: Building an electronic nose"
+title:  "Concrete Jungle's Fruit Tree Sensors"
+description: "Part 2: Building an electronic nose"
 date:   2016-07-27 17:56:00
-categories: sensors electronicnose concretejungle georgiatech
+image: assets/images/version1.5.jpg
 ---
 
 As part of our [collaboration with Georgia Tech](//www.highcube.org/concrete-jungle-carl-disalvo-collaboration), we've been developing various strategies for sensing fruit growing in trees. One of those has been to build an electronic nose that can smell fruit and alert us when it's ripe.

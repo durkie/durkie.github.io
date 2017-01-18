@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Barefoot pedals"
+title:  Barefoot pedals
 date:   2014-04-16 21:46:00
-categories: fab bikes
+image: assets/images/andyfoot.jpg
 ---
 
 [Andy](http://www.andrewquitmeyer.com) has long wanted barefoot pedals for some reason. I love biking from fruit tree to swimming hole every day I'm able to, but rarely during those days do I feel bummed out about wearing shoes while biking.
 
-Nonetheless, Andy had a birthday coming up and I had to get him something. So, [barefoot pedals]({{ site.url }}/barefootpedals.tar.gz) (sketchup files). Some of the pedal dimensions are weird — they're meant to support the whole width of the foot, and in Andy's case that's a size 15 foot. 
+Nonetheless, Andy had a birthday coming up and I had to get him something. So, [barefoot pedals]({{ site.url }}/assets/files/barefootpedals.tar.gz) (sketchup files). Some of the pedal dimensions are weird — they're meant to support the whole width of the foot, and in Andy's case that's a size 15 foot.
 
 ![Before]({{ site.url }}/images/beforepedal.jpg)
 Starting point — rip off the cage, keep the bolts and spacers.
@@ -27,4 +27,4 @@ These lasted Andy about a week and a half before they started breaking. So, thin
 * Better big toe post — use the comfy cone-shaped post everywhere, and move it about 1/4" / 6mm further forward of the pedal axle.
 * Possibly only put toe posts on one side of the pedal.
 
-[Barefoot pedals]({{ site.url }}/barefootpedals.tar.gz) (SKP)
+[Barefoot pedals]({{ site.url }}/assets/filesbarefootpedals.tar.gz) (SKP)

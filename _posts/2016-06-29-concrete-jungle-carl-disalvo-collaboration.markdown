@@ -2,7 +2,8 @@
 layout: post
 title:  "Concrete Jungle's Fruit Tree Sensors"
 date:   2016-06-28 17:56:00
-categories: sensors concretejungle georgiatech
+description: Detecting when urban fruit trees are ripe
+image: assets/images/ubicomp2013.png
 ---
 
 One of the biggest challenges we face in running and growing Concrete Jungle is planning around the varying schedules of the thousands of fruit trees in the Atlanta area. Some trees will produce early, some produce late, some not at all. Some produce on-schedule but drop their fruit earlier than expected, some produce a bumper crop and should be prioritized, etc.

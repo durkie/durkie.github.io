@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How to produce a knurled bicycle rim"
+title:  Making knurled bicycle rims for fun and ...
 date:   2013-12-10 13:55:00
-categories: fab bikes
+image: assets/images/knurl+wc.jpg
 ---
 
 One of the first things I built was a machine to knurl the sidewalls of bicycle rims.
@@ -32,4 +32,4 @@ Straight knurl with light WC coating on top.
 
 Bare diamond knurl.  
 
-Pretty sweet right? I don't know what I was thinking. 
+Pretty sweet right? I don't know what I was thinking.
