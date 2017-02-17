@@ -16,7 +16,7 @@ permalink: /:title
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 12
+tiles-count: 20
 
 # Social settings
 github_url: https://github.com/durkie
