@@ -13,7 +13,13 @@ During my undergrad years at Georgia Tech I had been pursuing tungsten carbide c
 
 Tungsten carbide (WC) coatings have been proven in the past — Plazmatic produced a WC-coated rim for trials riders in the late 90s, at a cost of $150-$200 a piece after you shipped in your wheel. My plan was to improve on this business model: sell pre-coated new rims. You get a new wheel, you don't have to ship your old wheel in and wait, and you pay less because the coating operation can be done in bulk. Plus with my background in materials science and interest in the sport it was a shoe-in.
 
-My initial experiments with the WC on rims would vary only how much the brake pads were shredded when the brakes slipped and didn't provide any great increase in brake hold. I began to think of a way I could quickly experiment with different rim textures for braking and began a long diversion down the path of knurling rims. Knurling is used for all kinds of grip applications, and if I could get the knurled texture just right, maybe I could spray a light coating of tungsten carbide on top of it and reduce its wear.
+My initial experiments with the WC on rims would vary only how much the brake pads were shredded when the brakes slipped and didn't provide any great increase in brake hold. Characterization of these coatings was particularly difficult, as their wear characteristics would change (sometimes within several hours of riding). Of the two images below, the first would grind brake pads to shreds. The second would work well, but would fade in performance quickly.
+
+![Coarse]({{ site.url }}/images/pgcxx-250x.jpg)
+![Fine]({{ site.url }}/images/2546-2-250x.jpg)
+
+
+I began to think of a way I could quickly experiment with different rim textures for braking and began a long diversion down the path of knurling rims. Knurling is used for all kinds of grip applications, and if I could get the knurled texture just right, maybe I could spray a light coating of tungsten carbide on top of it and reduce its wear.
 
 ![Knurler]({{ site.url }}/images/knurler.jpg)
 ![Knurler detail]({{ site.url }}/images/knurlerdetail.jpg)
