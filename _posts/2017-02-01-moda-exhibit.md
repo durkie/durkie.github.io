@@ -2,7 +2,7 @@
 layout: post
 title:  "Concrete Jungle Sensors on Display at MODA"
 description: "Homemade!"
-date:   2016-01-01 17:56:00
+date:   2017-02-01 17:56:00
 image: assets/images/moda.jpg
 ---
 
