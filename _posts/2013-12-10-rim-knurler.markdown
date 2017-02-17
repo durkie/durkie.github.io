@@ -19,7 +19,7 @@ My initial experiments with the WC on rims would vary only how much the brake pa
 ![Fine]({{ site.url }}/images/2546-2-250x.jpg)
 
 
-I began to think of a way I could quickly experiment with different rim textures for braking and began a long diversion down the path of knurling rims. Knurling is used for all kinds of grip applications, and if I could get the knurled texture just right, maybe I could spray a light coating of tungsten carbide on top of it and reduce its wear.
+I began to think of a way I could quickly experiment with different rim textures for braking and began a long diversion down the path of knurling rims. Knurling is used for all kinds of grip applications, and if I could get the knurled texture just right, maybe I could spray a light coating of tungsten carbide on top of it and reduce its wear, sort of like titanium nitride coatings atop machine tools.
 
 ![Knurler]({{ site.url }}/images/knurler.jpg)
 ![Knurler detail]({{ site.url }}/images/knurlerdetail.jpg)
