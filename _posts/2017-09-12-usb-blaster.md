@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Fixing dead USB ports with a Firewire port...
-description: "Homemade!"
+title:  "When you accidentally blow up your USB ports"
+description: "Ouroboros"
 date:   2017-09-12 17:56:00
 image: assets/images/usb-blaster-1.jpg
 ---
