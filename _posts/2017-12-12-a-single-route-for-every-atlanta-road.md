@@ -8,11 +8,11 @@ image: assets/images/itpocolypse.png
 
 Making a 4300-mile / 7000-kilometer bike route of every road in Atlanta
 
-I'm a cyclist. I'm also the co-founder of [Concrete Jungle](//www.concrete-jungle.org), a non-profit that picks fruit from trees growing all over the Atlanta area and donate it to local homeless shelters and food banks. Both of these mean that that I'm often traveling down back roads and alternate paths, either to look for new fruit trees or just to take a more interesting route.
+I'm a cyclist. I'm also the co-founder of [Concrete Jungle](//www.concrete-jungle.org), a non-profit that picks fruit from trees growing all over the Atlanta area and donates it to local homeless shelters and food banks. Both of these mean that that I'm often traveling down back roads and alternate paths, either to look for new fruit trees or just to take a more interesting route.
 
 Several years ago, Concrete Jungle had a small project with the US Forest Service to survey the fruit trees growing in several low-income Atlanta neighborhoods: West End, Castleberry Hill, English Ave, Vine City, and Mechanicsville. As part of this project, I rode my bike down every single street in these neighborhoods and recorded every mulberry, pecan, apple, fig and pear tree I found.
 
-The trees were actually the least interesting part of this project because these neighborhoods are known in Atlanta as being kind of mythically poor and high-crime. And, sure, they are: English Ave and Vine City are home to the infamous Bluff district, the neighborhood around Vine City station was recently the fifth most dangerous in the US, and boarded-up houses are more common than not on some blocks.
+The trees were actually the least interesting part of this project because these neighborhoods are known in Atlanta as being kind of mythically poor and high-crime. And, sure, they are: English Ave and Vine City are home to the infamous [Bluff](//en.wikipedia.org/wiki/English_Avenue_and_Vine_City#"The_Bluff"), the neighborhood around Vine City station was recently the fifth most dangerous in the US, and boarded-up houses are more common than not on some blocks.
 
 But they're also home to lots of history, new development, beautiful places, secret paths, and normal folks going about their lives.
 
@@ -83,20 +83,15 @@ That same Fairlie-Popular district looks like this in network form:
 
 You can see that some nodes are spaced farther apart and some closer together. This is because the edge connecting each node has a *weight* to it, which is some cost associated with traveling along that edge. A natural candidate for the weight is length of the road: if you want to get to node A from node B, it's going to cost you 2 miles of travel. Weight could also factor in other considerations, like number of stoplights, speed limits, presence of school zones, etc. If you've ever tried to get biking directions from Google Maps, they probably also have weights related to how busy the road is, whether the road has bike lanes, and maybe even how hilly a road is.
 
-Our optimization options are limited though because we're ultimately traveling down every street, hilly or not, busy or not, bike lanes or not. So for now we're just using road length as our weight. As you'll see this makes for some strange routes. We could potentially optimize for making more "fun" routes in the future, but we'd have to quantify what separates "fun" rides from "not-fun" rides.
+Our optimization options are limited though because we're ultimately traveling down every street, hilly or not, busy or not, bike lanes or not. So for now we're just using road length as our weight. As you can see below this makes for some strange routes. We could potentially optimize for making more "fun" routes in the future, but we'd have to quantify what separates "fun" rides from "not-fun" rides.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/50k3GXdbdrM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Speaking of fun, graph theorists have good names for routing problems. When I was first looking at this problem, I thought it might be a variant of the classic *Traveling Salesman* problem: a hypothetical salesman is traveling the country and has multiple cities that he needs to visit exactly once and then return home. What is the optimal order for visiting the cities? This problem becomes exponentially harder to solve as the number of cities in the itinerary increases.
 
 Upon further examination, I thought then that it might be a variant of the *Seven Bridges of Königsberg* problem. Wikipedia's description:
 
-> The city of Königsberg in Prussia (now Kaliningrad, Russia) was set on both sides of the Pregel River, and included two large islands which were connected to each other, or to the two mainland portions of the city, by seven bridges. The problem was to devise a walk through the city that would cross each of those bridges once and only once.
-
->By way of specifying the logical task unambiguously, solutions involving either
-
->   * reaching an island or mainland bank other than via one of the bridges, or
-  * accessing any bridge without crossing to its other end
-
-> are explicitly unacceptable.
+> The city of Königsberg in Prussia (now Kaliningrad, Russia) was set on both sides of the Pregel River, and included two large islands which were connected to each other, or to the two mainland portions of the city, by seven bridges. The problem was to devise a walk through the city that would cross each of those bridges once and only once. By way of specifying the logical task unambiguously, solutions involving either reaching an island or mainland bank other than via one of the bridges, or accessing any bridge without crossing to its other end are explicitly unacceptable.
 
 ![konigsberg](/images/Konigsberg_bridges.png)
 
@@ -162,15 +157,12 @@ Normally, calculating all possible matchings is not a problem for smaller routes
 
 That shortcut is based on the observation that an odd node is only going to have strong preferences to pair with nearby odd nodes. Sorry hopeless romantics: there's no chance of an odd node in Northwest Atlanta preferentially pairing with one in Southeast Atlanta. The commute is just too long.
 
-So unlike our network above, where each node has a preference about every other node, we limit our nodes to having preferences about their nearest 10 odd neighbors. This is **much** more manageable than trying to form a complete graph of all odd nodes.
+So unlike our network above, where each node has a preference about every other node, we limit our nodes to having preferences about their nearest 10 odd neighbors. This is **much** more manageable than trying to form a complete graph of all odd nodes. Most general-purpose matching algorithms run in O(n^3) time as well, meaning matching computation time scales with the cube of number of nodes we're trying to match, so it's very much in our interest to make our graph as small as possible.
 
-To give you an idea, trying to form a complete graph of all odd nodes ate as much RAM as I would throw at it, topping out at over 10 gigabytes before I stopped.
+To give you an idea, trying to form a complete graph of all odd nodes ate as much RAM as I would throw at it, topping out at over 10 gigabytes before I stopped.  If I then limited preferences to the nearest 200 neighbors, it only used 3 gigabytes of ram but the algorithm ran for 8 days before I gave up on it.  
+If I limited preferences to the nearest 10 neighbors, the algorithm used 135 megabytes of RAM and the entire route was calculated in under 3 hours on the second-cheapest DigitalOcean server.
 
-If I then limited preferences to the nearest 200 neighbors, it only used 3 gigabytes of ram but the algorithm ran for 8 days before I gave up on it.
-
-If I limited preferences to the nearest 10 neighbors, the algorithm used 135 megabytes of RAM and the entire route was calculated in under 3 hours.
-
-The nice thing about limiting our search to 10 nearest neighbors is that it will fail rather than give you an sub-optimal route: since our matching is within a graph of all odd nodes, if it turned out that 10 neighbors was too few then the matching would be incomplete and we wouldn't be able to complete our Eulerian circuit (this happened when I limited the search to 5 nearest neighbors).
+The nice thing about limiting our search to 10 nearest neighbors is that it will fail rather than give you a sub-optimal route. Since our matching is within a graph of all odd nodes, if it turned out that 10 neighbors was too few then the matching would be incomplete and we wouldn't be able to complete our Eulerian circuit (this happened when I limited the search to 5 nearest neighbors).
 
 ## The route: ITPOCOLYPSE
 
@@ -178,10 +170,10 @@ The nice thing about limiting our search to 10 nearest neighbors is that it will
 
 ...is totally ridiculous and visible [here](//ridewithgps.com/routes/26597291).
 
-The GPX file (10 MB) is here: [durkie.github.io/files/itpocolypse.gpx](//durkie.github.io/files/itpocolypse.gpx)
+The GPX file (10 MB) is here: [durkie.github.io/files/itpocolypse.gpx](//durkie.github.io/files/itpocolypse.gpx). It takes about 30 seconds just to load on my computer and occasionally crashes the RideWithGPS iOS app.
 
 4345 miles (6992 km) and 228,000 feet (69,490 meters) of climbing/descending! See absolutely every neighborhood in Atlanta! Raw road length of inside-the-perimeter roads is 3277 miles (5273 km), so we're over that by 33%. Not bad!
 
 Although it's hard to analyze on such a silly scale, 33% is actually pretty good. I use this same algorithm to generate routes on a much smaller scale (~25 miles/40 km) as part of my All of ITP project, where I'm trying to ride every road inside the perimeter (in much more bite-sized chunks), and the routes hold up to visual inspection: they're a little unusual, but aside from a few topology errors, they're solid. I usually can't improve the route unless it involves grouping things together a little differently (like doing a busy road section early in the ride). And they usually end up being about 25-35% longer than the "raw" road length as well.
 
-Finally, you probably shouldn't ride this route: although Atlanta has very few bridges and one-way streets, this doesn't take those in to account at all. That will have to wait for a future installment...
+To anyone trying to ride this route: godspeed. I want to help you achieve this in any way that I can, but I must warn you: the topology used for routing here is a bit...naive. Although Atlanta has very few one-way roads and bridges, this route knows nothing about the ones that do exist. That will have to wait for a future installment...
