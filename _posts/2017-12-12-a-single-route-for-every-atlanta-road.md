@@ -133,13 +133,13 @@ A matching is a set of edges (roads) where no node (intersection) repeats. That'
 
 Or a group of kids and a group of presents: each child has preferences about which present she would like to receive, so what's the best way to do it, even if it means a child receives her 2nd or 3rd choice?
 
-Or if you've ever known someone who has gone to medical school in the US then you know one of the most important days in that process is *Match Day*: each medical school received many applications and decided its preferences about whom it would like to admit. Students likewise submitted applications to several schools and made their own preferences about where they would prefer to attend. They're matched up as best as can be and Match Day is the big reveal.
+Or if you've ever known someone who has gone to medical school in the US then you know one of the most important days in that process is *Match Day*: each medical school received many applications and formed its preferences about whom it would like to admit. Students likewise submitted applications to several schools and made their own preferences about where they would prefer to attend. They're matched up as best as can be and Match Day is the big reveal.
 
 Our previous definition of a matching, "a group of edges with no repeating nodes", makes more sense now: no nodes repeat because each one is paired with only one other node: one present to one child, one student to one school. We can apply this to route making.
 
-Let's say we took our giant Atlanta road network and found all of the odd-degree nodes. We know we have to duplicate the paths between each pair of nodes but aren't sure which are the best to make.
+Let's say we took our giant Atlanta road network and found all of the odd-degree nodes. We know we have to duplicate the paths between each pair of nodes but aren't sure which paths are the best to make.
 
-This is a matchmaking problem: we're just figuring out which nodes want to be roommates. If we use the closeness between nodes as their "preference" for each other then we can find our shortest route: we only duplicate edges between nodes that successfully match, and only nodes that are closest to each other will match. Any node that wants to match with an already-matched node will have to settle for second-best.
+This is a matchmaking problem: we're just figuring out which nodes want to be roommates. If we use the closeness between nodes as their preference for each other then we can find our shortest route: we only duplicate edges between nodes that successfully match, and only nodes that are closest to each other will match. Any node that wants to match with an already-matched node will have to settle for second-best.
 
 Suppose this image represented a portion of the odd Atlanta node network. Each node has a connection to every other node in proportion to the distance between them. Nodes 0 and 4 wouldn't pair up because the distance between them is so large, for instance.
 
@@ -147,22 +147,20 @@ Suppose this image represented a portion of the odd Atlanta node network. Each n
 
 The concept of the matching can be used to think of all possible ways that we can create our phantom streets. The image has 1-4, 2-3, 0-5 highlighted as one matching (and clearly the optimal matching), but 1-0, 4-5, and 2-3 would also be a matching, as would 1-3, 4-5, and 0-2. All would be acceptable for solving our Chinese Postman problem: duplicate the edges highlighted in the matching and we would have a Eulerian network. But only the first one would be optimal and minimize the number of sad kids on Christmas morning.
 
-We simply need to calculate all possible matchings, count the distance covered in each and choose the shortest one.
-
 #### The shortcut
 
 ![Shortcut](/images/shortcut.png)
 
-Normally, calculating all possible matchings is not a problem for smaller routes. But for a route spanning the entirety of roads inside Atlanta's perimeter we have to take a shortcut.
+Normally, calculating an optimal matching is not a problem for smaller routes. But for a route spanning the entirety of roads inside Atlanta's perimeter we have to take a shortcut.
 
 That shortcut is based on the observation that an odd node is only going to have strong preferences to pair with nearby odd nodes. Sorry hopeless romantics: there's no chance of an odd node in Northwest Atlanta preferentially pairing with one in Southeast Atlanta. The commute is just too long.
 
-So unlike our network above, where each node has a preference about every other node, we limit our nodes to having preferences about their nearest 10 odd neighbors. This is **much** more manageable than trying to form a complete graph of all odd nodes. Most general-purpose matching algorithms run in O(n^3) time as well, meaning matching computation time scales with the cube of number of nodes we're trying to match, so it's very much in our interest to make our graph as small as possible.
+So unlike our network above, where each node has a preference about every other node, we limit our nodes to having preferences about their nearest 10 odd neighbors. This is **much** more manageable than trying to form a complete graph of all odd nodes. Most general-purpose matching algorithms run in O(n^3) time as well, meaning computation time scales with the cube of number of nodes we're trying to match, so it's very much in our interest to make our graph as small as possible.
 
 To give you an idea, trying to form a complete graph of all odd nodes ate as much RAM as I would throw at it, topping out at over 10 gigabytes before I stopped.  If I then limited preferences to the nearest 200 neighbors, it only used 3 gigabytes of ram but the algorithm ran for 8 days before I gave up on it.  
 If I limited preferences to the nearest 10 neighbors, the algorithm used 135 megabytes of RAM and the entire route was calculated in under 3 hours on the second-cheapest DigitalOcean server.
 
-The nice thing about limiting our search to 10 nearest neighbors is that it will fail rather than give you a sub-optimal route. Since our matching is within a graph of all odd nodes, if it turned out that 10 neighbors was too few then the matching would be incomplete and we wouldn't be able to complete our Eulerian circuit (this happened when I limited the search to 5 nearest neighbors).
+One nice thing about limiting our search to 10 nearest neighbors is that it will fail rather than give you a sub-optimal route. If it turned out that 10 neighbors was too few then the matching would be incomplete and we wouldn't be able to complete our Eulerian circuit (this happened when I limited the search to 5 nearest neighbors).
 
 ## The route: ITPOCOLYPSE
 
@@ -172,8 +170,8 @@ The nice thing about limiting our search to 10 nearest neighbors is that it will
 
 The GPX file (10 MB) is here: [durkie.github.io/files/itpocolypse.gpx](//durkie.github.io/files/itpocolypse.gpx). It takes about 30 seconds just to load on my computer and occasionally crashes the RideWithGPS iOS app.
 
-4345 miles (6992 km) and 228,000 feet (69,490 meters) of climbing/descending! See absolutely every neighborhood in Atlanta! Raw road length of inside-the-perimeter roads is 3277 miles (5273 km), so we're over that by 33%. Not bad!
+4345 miles (6992 km) and 227,800 feet (69,433 meters) of climbing/descending! See absolutely every neighborhood in Atlanta! Raw road length of inside-the-perimeter roads is 3277 miles (5273 km), so we're over that by 33%. Not bad!
 
-Although it's hard to analyze on such a silly scale, 33% is actually pretty good. I use this same algorithm to generate routes on a much smaller scale (~25 miles/40 km) as part of my All of ITP project, where I'm trying to ride every road inside the perimeter (in much more bite-sized chunks), and the routes hold up to visual inspection: they're a little unusual, but aside from a few topology errors, they're solid. I usually can't improve the route unless it involves grouping things together a little differently (like doing a busy road section early in the ride). And they usually end up being about 25-35% longer than the "raw" road length as well.
+Although it's hard to analyze on such a silly scale, 33% is actually pretty good. I use this same algorithm to generate routes on a much smaller scale for All of ITP rides and the routes hold up to visual inspection: they're a little unusual, but aside from a few topology errors, they're solid. I usually can't improve the route unless it involves grouping things together a little differently (like doing a busy road section early in the ride). And they usually end up being about 25-35% longer than the "raw" road length as well.
 
 To anyone trying to ride this route: godspeed. I want to help you achieve this in any way that I can, but I must warn you: the topology used for routing here is a bit...naive. Although Atlanta has very few one-way roads and bridges, this route knows nothing about the ones that do exist. That will have to wait for a future installment...
