@@ -4,7 +4,7 @@ subtitle:
 email: youremailaddress@gmail.com
 description: "Hi! Here's a few things I've made..."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.highcube.org" # the base hostname & protocol for your site
+url: "https://www.highcube.org" # the base hostname & protocol for your site
 author: Craig Durkin
 street_address: 1234 Somewhere Road
 city: Atlanta
